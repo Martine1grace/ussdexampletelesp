@@ -25,14 +25,21 @@ def ussdApp(request):
         response =""
         #  main menu for our application
         if text == '':
-            response =  "CON Murakaza neza kuri Idafarm \n"
+            response =  "Murakaza neza  \n"
             response += "1. Kwandikisha igihingwa \n"
             response += "2. Kumenya ingengabihe \n"
         elif text == '1':
 
             response = "CON Hitamo igihingwa \n"
-            response += "1. Ibinyomoro \n"
-            response += "2. Indimu"
+            response += "1. ibigori \n"
+            response += "2. amashu \n"
+            response += "3. ibitunguru \n"
+            response += "4. caroti \n"
+            response += "5. intoryi \n"
+            response += "6. urusenda \n"
+            response += "7. ibishyimbo \n"
+            response += "8. ibindi"
+             
         elif text == '1*1':
             product="Ibinyomoro"
             response = "CON shyiramo ubuso bw'ubutaka bwawe bw' "+str(product)+"\n"
